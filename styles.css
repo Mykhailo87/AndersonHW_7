@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    border: 3px solid rgb(92, 92, 172);
+    border-radius: 8px;
+    background-color: rgb(214, 214, 236);
+    overflow: hidden;
+    padding: 10px;
+}
+
+.display {
+    max-width: 300px;
+    font-size: 2em;
+    text-align: right;
+    border: solid 2px rgb(173, 172, 172);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    min-height: 40px;
+    overflow: hidden;
+}
+
+.input_field {
+    margin: 30px 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5,60px);
+    column-gap: 5px;
+    gap: 10px;
+}
+
+.row-two {
+    grid-row: span 2;
+    height: 100%;
+}
+
+.btn {
+    width: 100%;
+    min-height: 60px;
+    font-size: 1.5em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn.operator {
+    background-color: rgb(157, 163, 173);
+    color: #fff;
+}
+
+.btn.operator:hover {
+    background-color: rgb(121, 125, 133);;
+}
+
+.btn.additional {
+    background-color: rgb(191, 200, 214);
+    color: #fff;
+}
+
+.btn.additional:hover {
+    background-color: rgb(151, 155, 163);
+}
+
+.btn.equal {
+    background-color: rgb(63, 105, 194);
+    color: #fff;
+}
+
+.btn.btn.equal:hover {
+    background-color: rgb(47, 78, 145);
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.btn.clear {
+    background-color: #e66673;
+    color: #fff;
+}
+
+.btn.clear:hover {
+    background-color: #dc3545;
+}
