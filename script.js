@@ -1,5 +1,4 @@
 const display = document.querySelector(".display");
-
 let previousInput = '';
 let currentInput = '';
 let operator = '';
@@ -52,7 +51,6 @@ function setOperator(newOperator) {
     currentInput = '';
     updateDisplay();
 }
-
 
 function calculate() {
     let calculation;
